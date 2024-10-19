@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: black;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a .logo{
+    margin-left: 10px;
+}
+.header a .logo h1{
+    color: white;
+}
+.header .logo h1 .mys{
+    color: red;
+}
+.header .logo h1 .mytore{
+    color: yellow;
+}
+.header .menuContainer ul{
+    display: flex;
+    list-style: none;
+}
+.header .menuContainer ul li{
+    margin-right: 20px;
+}
+.header .menuContainer ul li a{
+    text-decoration: none;
+    color: white;
+}
+.header a .cartAmount{
+    /* background: white; */
+    padding: 5px 20px;
+    position: relative;
+}
+.header a .cartAmount .bi-cart4{
+    color:pink;
+    font-size: 40px;
+}
+.header a .cartAmount p{
+    position: absolute;
+    z-index: 5;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    border-radius: 8px;
+    top: 3px;
+    right: 10px;
+}
+.shop{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+.shop .item{
+    margin: 20px;
+    border: 2px solid black;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(212, 241, 241);
+}   
+.shop .item img{
+    width: 99.98%;
+    border-radius: 2px;
+    margin: auto;
+    height: 70%;
+}
+.shop .item h3, p{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.shop .item .main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+.shop .item .main .cartDisplay span{
+    cursor: progress;
+}
